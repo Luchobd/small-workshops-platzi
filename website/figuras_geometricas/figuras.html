@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Figuras Geometricas Input</title>
+  </head>
+  <body>
+    <h1>Figuras Geometricas</h1>
+    <main>
+      <!-- Card the top -->
+      <!-- Area Perimetro Cuadrado y Rectangulo -->
+      <section class="card">
+        <div class="card__title">
+          <h2>Calcula el área y perímetro</h2>
+          <h3>CUADRADO O RECTÁNGULO</h3>
+        </div>
+        <form action="" class="card__form">
+          <label for="inputBaseRectangulo" class="container__form-label">
+            <span> BASE CUADRADO o RECTÁNGULO (cm) </span></label
+          >
+          <input
+            type="number"
+            id="inputBaseRectangulo"
+            class="container__form-input inputBase"
+          />
+
+          <label
+            for="inputAlturaRectangulo"
+            class="container__form-label inputAltura"
+          >
+            <span> ALTURA CUADRADO o RECTÁNGULO (cm)</span></label
+          >
+          <input
+            type="number"
+            id="inputAlturaRectangulo"
+            class="container__form-input inputAltura"
+          />
+        </form>
+        <div class="card__area-perimetro" id="areaPerimetro1"></div>
+        <div class="card__container-button">
+          <div class="card__center-button">
+            <button
+              type="button"
+              class="card__button-perimetro"
+              onclick="calcularPerimetroRectangulo()"
+            >
+              Calcular Périmetro
+            </button>
+
+            <button
+              type="button"
+              class="card__button-area"
+              onclick="calcularAreaRectangulo()"
+            >
+              Calcular Área
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Area Perimetro Círculo -->
+      <section class="card">
+        <div class="card__title">
+          <h2>Calcula el área y perímetro</h2>
+          <h3>CÍRCULO</h3>
+        </div>
+        <form action="" class="card__form">
+          <label for="inputRadioCirculo" class="container__form-label"
+            ><span> RADIO del CÍRCULO (cm)</span></label
+          >
+          <input
+            type="number"
+            id="inputRadioCirculo"
+            class="container__form-input inputBase"
+          />
+
+          <label for="" class="container__form-label">
+            <span> RADIO = DIAMETRO / 2 </span></label
+          >
+          <input class="container__form-input inputNone" type="number" />
+        </form>
+        <div class="card__area-perimetro" id="areaPerimetro2"></div>
+        <div class="card__container-button">
+          <div class="card__center-button">
+            <button
+              type="button"
+              class="card__button-perimetro"
+              onclick="calcularPerimetroCirculo()"
+            >
+              Calcular Périmetro
+            </button>
+
+            <button
+              type="button"
+              class="card__button-area"
+              onclick="calcularAreaCirculo()"
+            >
+              Calcular Área
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Card the bottom -->
+      <!-- Perimetro Triangulo -->
+      <section class="card">
+        <div class="card__title">
+          <h2>Calcula el perímetro</h2>
+          <h3>Triángulo Isoscele</h3>
+        </div>
+        <form action="" class="card__form">
+          <label for="inputBaseTrianguloPerimetro" class="container__form-label"
+            ><span> BASE del TRIÁNGULO (cm) </span></label
+          >
+          <input
+            type="number"
+            id="inputBaseTrianguloPerimetro"
+            class="container__form-input"
+          />
+
+          <label for="inputPataTriangulo" class="container__form-label">
+            <span>PATA del TRIÁNGULO (cm) </span></label
+          >
+          <input
+            type="number"
+            id="inputPataTriangulo"
+            class="container__form-input"
+          />
+        </form>
+        <div class="card__area-perimetro" id="areaPerimetro3"></div>
+        <div class="card__container-button">
+          <div class="card__center-button">
+            <button
+              type="button"
+              class="card__button-perimetro"
+              onclick="calcularPerimetroTriangulo()"
+            >
+              Calcular Périmetro
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Area Triangulo -->
+      <section class="card">
+        <div class="card__title">
+          <h2>Calcula el área</h2>
+          <h3>Triángulo Isoscele</h3>
+        </div>
+        <form action="" class="card__form">
+          <label for="inputBaseTriangulo" class="container__form-label"
+            ><span> BASE del TRIÁNGULO (cm)</span></label
+          >
+          <input
+            type="number"
+            id="inputBaseTriangulo"
+            class="container__form-input"
+          />
+
+          <label for="inputAlturaTriangulo" class="container__form-label"
+            ><span> ALTURA del TRIÁNGULO(cm)</span></label
+          >
+          <input
+            type="number"
+            id="inputAlturaTriangulo"
+            class="container__form-input"
+          />
+        </form>
+        <div class="card__area-perimetro" id="areaPerimetro4"></div>
+        <div class="card__container-button">
+          <div class="card__center-button">
+            <button
+              type="button"
+              class="card__button-area"
+              onclick="calcularAreaTriangulo()"
+            >
+              Calcular Area
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Altura del Triangulo Isosceles -->
+    <section class="card__hipo">
+      <h2>Calcula la Altura</h2>
+      <h3>Triángulo Isóscele</h3>
+      <form action="" class="card__hipo-form">
+        <label for="inputBaseTriangle" class="container__hipo-label">
+          <span> BASE del TRIÁNGULO (cm)</span></label
+        >
+        <input
+          type="number"
+          id="inputBaseTriangle"
+          class="container__hipo-input"
+        />
+
+        <label for="inputPataTriangle" class="container__hipo-label">
+          <span>PATA del TRIÁNGULO (cm)</span></label
+        >
+        <input
+          type="number"
+          id="inputPataTriangle"
+          class="container__hipo-input"
+        />
+      </form>
+      <div
+        class="card__area-perimetro card__hipo-calcular"
+        id="areaPerimetro5"
+      ></div>
+      <div class="card__container-button">
+        <div class="card__center-button">
+          <button
+            type="button"
+            class="card__button-altura"
+            onclick="calcularAlturaTriangulo()"
+          >
+            Calcular Altura Triangulo Isoscele
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>Luis Blanco || LuchoDev.</footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>

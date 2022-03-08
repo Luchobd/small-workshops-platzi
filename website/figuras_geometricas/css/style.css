@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #7d5f8e;
+  font-family: "Roboto", sans-serif;
+  /* margin: 40px 0; */
+  /* display: flex;
+  justify-content: center; */
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  margin: 20px 0;
+  text-align: center;
+  color: #f9f9f9;
+}
+
+main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Container of the Card */
+.card {
+  background-color: #525558;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  /* Para que nada salga de la caja*/
+  overflow: hidden;
+  box-shadow: -10px 5px 5px #00000080;
+}
+
+.card__title h2 {
+  margin-top: 30px;
+}
+
+.card__title h3 {
+  margin: 30px 0;
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: #f9f9f9;
+}
+
+.card__form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__form-label {
+  color: #f9f9f9;
+}
+
+.container__form-input {
+  margin: 15px auto;
+  width: 50px;
+  border: none;
+  outline: none;
+  background-color: #525558;
+  border-bottom: 2px solid #800080;
+  text-align: center;
+  color: #f9f9f9;
+}
+
+.inputNone {
+  border-color: transparent;
+}
+
+.card__area-perimetro {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9f9f9;
+}
+
+.card__container-button {
+  width: 100%;
+}
+
+.card__center-button {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card__button-perimetro,
+.card__button-area {
+  height: 25px;
+  border: none;
+  background-color: purple;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #f9f9f9;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.card__button-perimetro:hover,
+.card__button-area:hover {
+  background-color: #f9f9f9;
+  color: #800080;
+}
+
+/* Card calc hipo */
+
+.card__hipo {
+  background-color: #525558;
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+  box-shadow: -10px 5px 5px #00000080;
+}
+
+.card__hipo h2 {
+  margin-top: 10px;
+}
+
+.card__hipo h3 {
+  margin: 20px 0;
+}
+
+.card__hipo-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__hipo-label {
+  color: #f9f9f9;
+}
+
+.container__hipo-input {
+  margin: 15px auto;
+  width: 50px;
+  border: none;
+  outline: none;
+  background-color: #525558;
+  border-bottom: 2px solid #800080;
+  text-align: center;
+}
+
+.card__center-button {
+  margin-bottom: 20px;
+}
+
+.card__button-altura {
+  height: 25px;
+  border: none;
+  background-color: purple;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #f9f9f9;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.card__button-altura:hover {
+  background-color: #f9f9f9;
+  color: #800080;
+}
+
+.container__hipo-input {
+  color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+  height: 40px;
+  width: 100%;
+
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f9f9f9d2;
+}
+
+/* Ocultar por defecto */
+
+/* Media Query Responsive */
+@media (max-width: 576px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
