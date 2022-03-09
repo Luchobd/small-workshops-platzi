@@ -81,7 +81,7 @@ img:hover {
   align-items: center;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .container {
     height: 100%;
   }
@@ -90,5 +90,6 @@ img:hover {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    gap: 50px 0;
   }
 }
