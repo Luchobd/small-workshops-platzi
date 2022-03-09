@@ -38,6 +38,18 @@
   height: 90vh;
 }
 
+article {
+  text-align: center;
+
+  width: 250px;
+}
+
+/* p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .title {
   text-align: center;
 }
@@ -52,6 +64,21 @@ h1 {
 
 img {
   width: 250px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+img:hover {
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.footer {
+  height: 5vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 576px) {
